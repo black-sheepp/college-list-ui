@@ -10,7 +10,7 @@ interface Ranking {
 	year: number;
 }
 
-interface Institution {
+export default interface Institution {
 	id: number;
 	rank: number;
 	name: string;
