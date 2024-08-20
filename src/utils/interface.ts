@@ -14,6 +14,7 @@ export default interface Institution {
 	id: number;
 	rank: number;
 	name: string;
+	icon: string;
 	location: string;
 	approved: string;
 	course: string;

@@ -72,7 +72,7 @@ const Table: React.FC = () => {
 	}, [sortedColleges, searchQuery]);
 
 	return (
-		<div className='overflow-x-auto w-full max-w-7xl items-center mx-auto'>
+		<div className='overflow-x-auto w-full items-center xl:px-32'>
 			<FilterSearch onSearch={handleSearch} onSort={handleSort} />
 			<table className='min-w-full border-collapse block md:table'>
 				<TableHeader/>
