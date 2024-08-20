@@ -10,11 +10,11 @@ interface UserReviewsProps {
 const UserReviews: React.FC<UserReviewsProps> = ({ rating, reviewsCount, highlight }) => {
     return (
         <td className='p-2 block md:table-cell'>
-            <div className='flex items-center'>
-                <span className='text-yellow-400 font-semibold'>{formatRating(rating)}</span>
-                <span className='ml-2 text-gray-400'>{`(${reviewsCount} reviews)`}</span>
+            <div className='items-center'>
+                <p className='text-black text-sm font-semibold'>{formatRating(rating)}</p>
+                <p className='text-gray-400 text-xs'>{`Based on ${reviewsCount} Users Review`}</p>
             </div>
-            <div className='text-orange-500 text-sm'>{highlight}</div>
+            <div className='text-orange-500 text-xs'>{highlight}</div>
         </td>
     );
 };
