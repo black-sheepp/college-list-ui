@@ -27,11 +27,11 @@ const CollegeRow: React.FC<CollegeRowProps> = ({ college }) => {
                         </div>
                     </div>
                 )}
-                <div className="p-1">
+                <div className="py-1">
                     <CollegeDetails college={college} />
                 </div>
             </td>
-            <td className="p-2 block md:table-cell align-top">
+            <td className="p-2 pr-12 block md:table-cell align-top">
                 <div className="text-[#02c39a] font-semibold">{`₹ ${college.fees.toLocaleString()}`}</div>
                 <p className="text-gray-400 text-xs">BE/BTech</p>
                 <p className="text-gray-400 text-xs">-First Year Fee</p>
@@ -45,7 +45,7 @@ const CollegeRow: React.FC<CollegeRowProps> = ({ college }) => {
                     Compare Fees
                 </button>
             </td>
-            <td className="p-2 block md:table-cell align-top">
+            <td className="p-2 pr-12 block md:table-cell align-top">
                 <PlacementInfo
                     averagePlacement={college.average_placement}
                     highestPlacement={college.highest_placement}
