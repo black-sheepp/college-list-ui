@@ -21,13 +21,13 @@ const CollegeRow: React.FC<CollegeRowProps> = ({ college }) => {
             <td className="p-2 block md:table-cell align-top text-xl">{`#${college.rank}`}</td>
             <td className="p-2 block md:table-cell align-top relative">
                 {college.featured && (
-                    <div className="absolute top-2 left-2 transform -translate-y-1/2">
-                        <div className="bg-red-500 text-white text-xs font-semibold px-4 py-1 rounded-full shadow-lg">
+                    <div className="absolute top-1 left-10 transform -translate-y-1/2">
+                        <div className="bg-red-500 text-white text-xs font-normal px-4 py-1 rounded-full shadow-lg">
                             Featured
                         </div>
                     </div>
                 )}
-                <div className="pt-6">
+                <div className="p-1">
                     <CollegeDetails college={college} />
                 </div>
             </td>
