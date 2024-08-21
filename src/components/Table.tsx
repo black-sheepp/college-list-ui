@@ -22,7 +22,7 @@ const Table: React.FC = () => {
     useInfiniteScroll(() => loadMoreColleges());
 
     const loadMoreColleges = () => {
-        if (loading || !hasMoreData) return; // Prevent multiple loads or loading when there's no more data
+        if (loading || !hasMoreData) return; 
 
         setLoading(true);
 
