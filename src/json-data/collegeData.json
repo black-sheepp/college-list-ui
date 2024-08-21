@@ -53,7 +53,7 @@
         "name": "Parul University, Vadodara",
         "icon": "https://upload.wikimedia.org/wikipedia/en/6/69/IIT_Madras_Logo.svg",
         "location": "Vadodara, Gujarat",
-        "approved": "AICTE, COA, PCI, INC, GNC Approved",
+        "approved": "AICTE, COA Approved",
         "course": "B.Tech Computer Science Engineering",
         "cutoff": "JEE-Advanced 2023 Cutoff: 175",
         "fees": 149000,
@@ -165,7 +165,7 @@
             "source": "NIRF",
             "year": 2023
         },
-        "featured": false
+        "featured": true
     },
     {
         "id": 8,
@@ -261,7 +261,7 @@
             "source": "NIRF",
             "year": 2023
         },
-        "featured": false
+        "featured": true
     },
     {
         "id": 12,
@@ -357,7 +357,7 @@
             "source": "NIRF",
             "year": 2023
         },
-        "featured": false
+        "featured": true
     },
     {
         "id": 16,
@@ -453,7 +453,7 @@
             "source": "NIRF",
             "year": 2023
         },
-        "featured": false
+        "featured": true
     },
     {
         "id": 20,
@@ -525,7 +525,7 @@
             "source": "NIRF",
             "year": 2023
         },
-        "featured": false
+        "featured": true
     },
     {
         "id": 23,
@@ -645,7 +645,7 @@
             "source": "NIRF",
             "year": 2023
         },
-        "featured": false
+        "featured": true
     },
     {
         "id": 28,

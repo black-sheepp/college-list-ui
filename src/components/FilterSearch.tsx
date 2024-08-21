@@ -26,9 +26,9 @@ const FilterSearch: React.FC<FilterSearchProps> = ({ onSearch, onSort }) => {
 
 	return (
 		<div className='flex justify-center items-center flex-col'>
-			<h1 className='w-full text-4xl font-bold text-gray-900 mb-4 mx-auto text-center my-4'>
+			{/* <h1 className='w-full text-3xl font-semibold text-[#109594] mb-4 mx-auto text-center my-4'>
 				Top College List of India
-			</h1>
+			</h1> */}
 			<div className='flex flex-col w-full md:flex-row justify-between items-center gap-4 mb-4'>
 				<div className='flex items-center bg-white text-gray-900 rounded-full shadow-sm overflow-hidden w-full mx-6 my-3 md:w-1/3'>
 					<FontAwesomeIcon icon={faSearch} className='ml-3 text-gray-400 text-sm' />
