@@ -13,46 +13,52 @@ interface CollegeRowProps {
 
 const CollegeRow: React.FC<CollegeRowProps> = ({ college }) => {
     const rowClasses = college.featured
-        ? 'border-b border-gray-300 block md:table-row bg-red-50'
-        : 'border-b border-gray-300 block md:table-row';
+        ? 'relative border-b border-gray-300 block md:table-row bg-red-50'
+        : 'relative border-b border-gray-300 block md:table-row';
 
     return (
         <tr key={college.id} className={rowClasses}>
-            <td className='p-2 block md:table-cell align-top text-xl'>{`#${college.rank}`}</td>
-            <td className='p-2 block md:table-cell align-top'>
+            <td className="p-2 block md:table-cell align-top text-xl">{`#${college.rank}`}</td>
+            <td className="p-2 block md:table-cell align-top relative">
                 {college.featured && (
-                    <div className='text-xs font-bold text-red-600 mb-2'>Featured</div>
+                    <div className="absolute top-2 left-2 transform -translate-y-1/2">
+                        <div className="bg-red-500 text-white text-xs font-semibold px-4 py-1 rounded-full shadow-lg">
+                            Featured
+                        </div>
+                    </div>
                 )}
-                <CollegeDetails college={college} />
+                <div className="pt-6">
+                    <CollegeDetails college={college} />
+                </div>
             </td>
-            <td className='p-2 block md:table-cell align-top'>
-                <div className='text-[#02c39a] font-semibold'>{`₹ ${college.fees.toLocaleString()}`}</div>
-                <p className='text-gray-400 text-xs'>BE/BTech</p>
-                <p className='text-gray-400 text-xs'>-First Year Fee</p>
-                <button className='text-orange-500 text-xs font-semibold'>
+            <td className="p-2 block md:table-cell align-top">
+                <div className="text-[#02c39a] font-semibold">{`₹ ${college.fees.toLocaleString()}`}</div>
+                <p className="text-gray-400 text-xs">BE/BTech</p>
+                <p className="text-gray-400 text-xs">-First Year Fee</p>
+                <button className="text-orange-500 text-xs font-semibold">
                     <FontAwesomeIcon
                         icon={faArrowRightArrowLeft}
-                        size='sm'
+                        size="sm"
                         style={{ color: "#F97315" }}
-                        className='mr-1'
+                        className="mr-1"
                     />
                     Compare Fees
                 </button>
             </td>
-            <td className='p-2 block md:table-cell align-top'>
+            <td className="p-2 block md:table-cell align-top">
                 <PlacementInfo
                     averagePlacement={college.average_placement}
                     highestPlacement={college.highest_placement}
                 />
             </td>
-            <td className='p-2 block md:table-cell align-top'>
+            <td className="p-2 block md:table-cell align-top">
                 <UserReviews
                     rating={college.user_reviews.rating}
                     reviewsCount={college.user_reviews.reviews_count}
                     highlight={college.user_reviews.highlight}
                 />
             </td>
-            <td className='p-2 block md:table-cell align-top'>
+            <td className="p-2 block md:table-cell align-top">
                 <RankingInfo
                     nationalRank={college.ranking.national_rank}
                     source={college.ranking.source}
