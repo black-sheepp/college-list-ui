@@ -66,18 +66,18 @@ const Table: React.FC = () => {
                         bValue = b.user_reviews.rating;
                         break;
                     case "fees":
-                        aValue = a.fees;
-                        bValue = b.fees;
+                        aValue = b.fees;
+                        bValue = a.fees;
                         break;
                     case "user_reviews_rating":
-                        aValue = a.user_reviews.rating;
-                        bValue = b.user_reviews.rating;
+                        aValue = a.user_reviews.reviews_count;
+                        bValue = b.user_reviews.reviews_count;
                         break;
                     default:
                         return 0;
                 }
 
-                return sortOrder === "asc" ? aValue - bValue : bValue - aValue;
+                return sortOrder === "asc" ? bValue - aValue : aValue - bValue;
             });
         }
         return sorted;
